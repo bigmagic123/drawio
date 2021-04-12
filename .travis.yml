@@ -4,6 +4,7 @@ language: c
 
 branches:
   only:
+    - main
     - master
     - dev
 
