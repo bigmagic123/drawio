@@ -9,7 +9,7 @@ branches:
     - dev
 
 script:
-  - apt-get update
-  - apt-get install qemu-system-arm
+  - sudo apt-get update
+  - sudo apt-get install qemu-system-arm
   - qemu-system-arm -M ?
   - echo "hello ci"
