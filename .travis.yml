@@ -1,5 +1,14 @@
-language: php
-php:
-  - '7.2'
+dist: focal
 
-script: true
+language: c
+
+branches:
+  only:
+    - master
+    - dev
+
+script:
+  - apt-get update
+  - apt-get install qemu-system-arm
+  - qemu-system-arm -M ?
+  - echo "hello ci"
